@@ -20,3 +20,9 @@ print("Third....")
 #List comprehension: Filtering applying if condition:
 even_values = [x*x for x in range(10) if x == 2]
 print(even_values)
+
+#Applying filters with one more of lines
+even_squares = [some_long_function(x)
+                for x in range(10)
+                if x % 2 == 0
+]
