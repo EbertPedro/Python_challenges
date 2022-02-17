@@ -15,14 +15,22 @@ squares2 = []
 for x in range(10):
     squares2.append(x*x)
 print(squares2)
-print("Third....")
 
-#List comprehension: Filtering applying if condition:
+""""
+List comprehension: Filtering applying if condition:
+Format: values = [expresion(x) for (value) in (collection or iterable) if (condition)]
+
+Furthermore:
+List comprehension with more than one line of code:
+Format: values = [expression(x) 
+                  for (value) in (collection or iterable) 
+                  if (condition)]
+"""
 even_values = [x*x for x in range(10) if x == 2]
-print(even_values)
+print("The first list filtered to even numbers is: {}".format(even_values))
 
-#Applying filters with one more of lines
-even_squares = [some_long_function(x)
+#Rewriting the above example in more than one line of code
+even_squares = [x * x
                 for x in range(10)
-                if x % 2 == 0
-]
+                if x % 2 == 0]
+print("The second list filtered to even numbers is: {}".format(even_values))
