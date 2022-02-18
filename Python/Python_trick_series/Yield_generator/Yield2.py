@@ -4,9 +4,6 @@ the return and yield operator in python. The key idea is
 the memory and the time taken to execute both generators.
 """
 
-from traceback import print_tb
-
-
 def square_numbers(nums):
     result = []
     for item in nums:
