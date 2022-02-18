@@ -34,3 +34,13 @@ print(my_nums2)
 
 for item in my_nums2:
     print(item, end=" ")
+    
+#Also, we can create an generator object by brackets: () 
+my_nums3 = (x*x for x in [1,2,3,4,5])
+for item in my_nums3:
+    print(item, end=" ")
+print(" ")    
+#We can show the generator by list(), in constrast we loss
+#the advantage because now the list object take a high space in memory
+my_nums4 = (x*x for x in [1,2,3,4,5])
+print(list(my_nums4))
