@@ -37,8 +37,34 @@
 # # print(next(print_num_iter))
 
 #*************third******************
-f = open("unbalanced_data.txt","w")
-f.write("This my first code with write function!!\n")
-f.write("This my first code with write function2!!\n")
+# f = open("unbalanced_data.txt","w")
+# f.write("This my first code with write function!!\n")
+# f.write("This my first code with write function2!!\n")
 
-# f.writelines("Added at the last line of code")
+#***************fouth*******************
+# languages = ['Java', 'Python', 'JavaScript']
+# versions = [14, 3, 6]
+
+# result = zip(languages, versions)
+# print(next(result))
+# print(next(result))
+# print(next(result))
+# print(list(result))
+# # Output: [('Java', 14), ('Python', 3), ('JavaScript', 6)]
+
+numbersList = [1, 2, 3]
+str_list = ['one', 'two']
+numbers_tuple = ('ONE', 'TWO', 'THREE', 'FOUR')
+
+# Notice, the size of numbersList and numbers_tuple is different
+result = zip(numbersList, numbers_tuple)
+
+# Converting to set
+result_set = set(result)
+print(result_set)
+
+result = zip(numbersList, str_list, numbers_tuple)
+
+# Converting to set
+result_set = set(result)
+print(result_set)
